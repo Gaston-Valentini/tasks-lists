@@ -1,0 +1,89 @@
+.title{
+    padding-top: 50px;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+}
+
+.list{
+    margin: 60px;
+    list-style: none;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-row-gap: 20px;
+}
+
+.listTask{
+    width: 200px;
+    height: 80px;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(25, 25, 25);
+    border: 1px solid rgb(0, 255, 98);
+    box-shadow: 3px 3px 7px #000;
+    color: rgb(0, 255, 98);
+}
+
+.listTask button{
+    align-self: flex-end;
+    border:  none;
+    background-color: rgb(253, 43, 43);
+    font-size: 17px;
+    border-radius: 5px;
+}
+
+.listTask button:hover{
+    background-color: rgb(255, 0, 0);
+    color: #fff;
+    outline: 1px solid #fff;
+    cursor: pointer;
+}
+
+@media(max-width: 1350px){
+    .list{
+        margin: 40px;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width: 1100px){
+    .list{
+        margin: 40px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media(max-width: 850px){
+    .list{
+        margin: 60px;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media(max-width: 850px){
+    .list{
+        margin: 40px;
+    }
+}
+
+@media(max-width: 850px){
+    .list{
+        display: flex;
+        flex-direction: column;
+    }
+    .listTask{
+        width: 100%;
+        height: 40px;
+        padding: 0 10px;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    }
+    .listTask button{
+        align-self: center;
+    }
+}
